@@ -133,7 +133,7 @@ section {
   height: 64px
 }
 
-h1.brand_logo {
+/* h1.brand_logo {
   height: 100%;
   display: flex;
   align-items: center;
@@ -141,7 +141,7 @@ h1.brand_logo {
 
 h1.brand_logo img {
   height: 50px;
-}
+} */
 
 .primary_nav {
   display: flex;
@@ -279,6 +279,11 @@ h2 {
 }
 
 /* ===== Features / Projects  marquee_section===== */
+.Projects_btn{
+font-size: 1rem;
+margin-right: 20px;
+}
+
 .marquee_section {
   height: 150vh;
   display: flex;
