@@ -8,7 +8,7 @@
   --bg: #0f1115;
   --card: #141923;
   --round: 18px;
-  --header: rgba(108, 80, 27, 0.2);
+  --header: rgba(0, 0, 0, 0.2);
   --border: rgba(108, 80, 27, .08);
   --accent: #f2d046;
   --accent1: #f2b746;
@@ -577,6 +577,10 @@ margin-right: 20px;
 
 .p6 {
   background-image: url(../asset/p6.png);
+}
+
+.p7 {
+  background-image: url(../asset/p7.png);
 }
 
 /* 글리치: pseudo 요소에 배경 상속 + 살짝 컬러 쉬프트 & 슬라이스 */
