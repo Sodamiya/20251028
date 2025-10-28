@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Yulsem — Product Designer & Front-End</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site_header" id="site_header">
+        <div class="container header_row">
+            <h1 class="brand_logo title_gra"><img src="asset/fylogo.png" alt="FlowYulLab"></h1>
+            <nav class="primary_nav">
+                <a href="#hero">Home</a>
+                <a href="#projects">Values</a>
+                <a href="#info">Projects</a>
+                <a href="#showcase">Tools</a>
+                <a href="#stats">Integrity</a>
+            </nav>
+            <button class="menu_toggle" id="menu_toggle" aria-label="open menu">☰</button>
+        </div>
+        <div class="mobile_panel" id="mobile_panel">
+            <nav class="mobile_menu">
+                <a href="#hero">Home</a>
+                <a href="#projects">Values</a>
+                <a href="#info">Projects</a>
+                <a href="#showcase">Tools</a>
+                <a href="#stats">Integrity</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero_section">
+        <figure>
+            <video src="asset/vid_logo.mp4" loop autoplay muted></video>
+        </figure>
+        <div class="container">
+            <h1 class="hero_title">UX/UI PORTFOLIO</h1>
+            <p class="hero_sub">I craft delightful interfaces, motion systems, and experiments with GSAP, WebGL, and
+                modern UX.</p>
+            <span class="magnet_zone"><a href="#info" class="hero_cta cta_btn">Explore Work →</a></span>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="marquee_section features_section">
+        <div class="marquee_wrap">
+            <div class="marquee_row">
+                <div class="marquee_item title_gra">PORTFOLIO</div>
+                <div class="marquee_item title_gra">INTERACTIONS</div>
+                <div class="marquee_item title_gra">BRANDING</div>
+                <div class="marquee_item title_gra">MARKETING</div>
+                <div class="marquee_item title_gra">GSAP</div>
+                <div class="marquee_item title_gra">WEB DESIGN</div>
+            </div>
+        </div>
+        <div class="container" id="projects">
+            <h2>Core <strong>Values</strong></h2>
+            <div class="features_grid ">
+                <article class="feature_card tilt_card">
+                    <div class="tilt_layer">
+                        <h3><strong>Collaboration</strong><span>협력</span></h3>
+                        <p>공동의 목표를 달성하기 위해 다른 사람들과 적극적으로 소통하고 시너지를 창출하는 태도.</p>
+                    </div>
+                </article>
+                <article class="feature_card tilt_card">
+                    <div class="tilt_layer">
+                        <h3><strong>Responsibility</strong><span>책임감</span></h3>
+                        <p>맡은 일이나 역할에 대해 주인의식을 가지고 끝까지 완수하며, 그 결과에 대해 기꺼이 책임을 지는 자세.</p>
+                    </div>
+                </article>
+                <article class="feature_card tilt_card">
+                    <div class="tilt_layer">
+                        <h3><strong>Empathy</strong> <span>공감</span></h3>
+                        <p>타인의 감정, 생각, 상황을 깊이 이해하고 존중하며, 그들의 입장에서 세상을 바라보려는 노력.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="marquee_wrap reverse">
+            <div class="marquee_row">
+                <div class="marquee_item title_gra2">PORTFOLIO</div>
+                <div class="marquee_item title_gra2">INTERACTIONS</div>
+                <div class="marquee_item title_gra2">BRANDING</div>
+                <div class="marquee_item title_gra2">WEBGL</div>
+                <div class="marquee_item title_gra2">GSAP</div>
+                <div class="marquee_item title_gra2">UX WRITING</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    <div class="spacer"></div> -->
+
+    <!--info_section -->
+    <section id="info" class="info_section">
+        <div class="wrapper">
+            <div class="info">
+                <h2>My <strong>Projects</strong></h2>
+                <div class="sticky_box">
+                </div>
+            </div>
+
+            <div class="projects">
+                <div class="card">
+                    <div class="text_g">
+                    <h4>조선미녀</h4>
+                    <p>모바일 앱 UX 개선 프로젝트로 사용자 이탈률 15% 감소 성과 달성</p>
+                    </div>
+                    <div class="btn_g">
+                    <span class="magnet_zone"><a href="https://www.figma.com/deck/em5jujIW9gIXjUkxmC0t58/-%ED%8C%80%ED%94%8C1-3%EC%A1%B0--%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0%EC%84%9C_%EB%AC%B8%EC%96%B4%EC%A7%80%EC%A7%80%EB%A7%88?node-id=614-1700&t=aIQ7O9Ga6O4k0KPg-1" class="hero_cta cta_btn" target="_blank">Project Proposal →</a></span>
+                    <span class="magnet_zone"><a href="https://ddongbae-i.github.io/boj_en/" class="hero_cta cta_btn" target="_blank">View Project →</a></span>
+</div>
+                </div>
+                <div class="card">
+                    <div class="text_g">
+                    <h4>윌리오</h4>
+                    <p>모바일 앱 UX 개선 프로젝트로 사용자 이탈률 15% 감소 성과 달성</p>
+                    </div>
+                    <div class="btn_g">
+                    <span class="magnet_zone"><a href="https://www.figma.com/deck/em5jujIW9gIXjUkxmC0t58/-%ED%8C%80%ED%94%8C1-3%EC%A1%B0--%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0%EC%84%9C_%EB%AC%B8%EC%96%B4%EC%A7%80%EC%A7%80%EB%A7%88?node-id=614-1700&t=aIQ7O9Ga6O4k0KPg-1" class="hero_cta cta_btn" target="_blank">Project Proposal →</a></span>
+                    <span class="magnet_zone"><a href="https://www.figma.com/proto/0Ytvax4VtjbtECQwnDw2Dt/3%EC%A1%B0?node-id=5478-23639&t=MxhryM25h3Ue7nAH-1" class="hero_cta cta_btn" target="_blank">View Project →</a></span>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase (Pin + Floating Photos) -->
+    <section id="showcase" class="pin_scene">
+        <div class="pin_layer">
+            <div class="pin_bg" id="pin_bg"
+                style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop')">
+            </div>
+            <div class="pin_overlay"></div>
+            <div class="pin_copy">
+                <h2>Available Skills and Tools</h2>
+                <p>사용 가능한 기술 및 도구</p>
+            </div>
+            <div class="float_wrap">
+                <div class="photo p1">
+                </div>
+                <div class="photo p2">
+                </div>
+                <div class="photo p3">
+                </div>
+                <div class="photo p4">
+                </div>
+                <div class="photo p5">
+                </div>
+                <div class="photo p6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stats (counters) -->
+    <section id="stats" class="stats_section">
+        <div class="container">
+            <h3>During my studies at Ezen IT Academy</h3>
+            <h2>25.06.26 ~ 25.10.28 (76 DAYS)</h2>
+            <div class="stats_grid">
+                <div class="stat_box">
+                    <div class="stat_value" data-count-to="100">0</div>
+                    <div class="stat_label">출석</div>
+                </div>
+                <div class="stat_box">
+                    <div class="stat_value" data-count-to="0">99</div>
+                    <div class="stat_label">지각</div>
+                </div>
+                <div class="stat_box">
+                    <div class="stat_value" data-count-to="0">99</div>
+                    <div class="stat_label">조퇴</div>
+                </div>
+            </div>
+            <h2>My approach to time and commitments</h2>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="cta_section">
+        <div class="container">
+            <p>이력서 바로가기</p>
+            <span class="magnet_zone"><a href="#" class="cta_btn">View Resume →</a></span>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
