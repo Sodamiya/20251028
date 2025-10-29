@@ -3,35 +3,35 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Golos+Text:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --ink: #e9eef5;
-  --muted: #d1cec8;
-  --bg: #0f1115;
-  --card: #141923;
+  --ink: #5c4432;
+  --muted: #5c4432;
+  --bg: #bfa380;
+  --card: #bfa380;
   --round: 18px;
-  --header: rgba(28, 7, 31, 0.3);
+  --header: rgba(255, 255, 255, 0.3);
   --border: rgba(108, 80, 27, .08);
-  --accent: #654074;
+  --accent: #f5d7b2;
   --accent1: #c04b77;
   --accent2: #c04b77;
   /* 네온 그린 */
   --accent3: #4cc9f0;
   --accent4: #46f2a1;
   /* 시안 블루 */
-  --card: #654074;
-  --bg-Cdeep-color1: #230f2b;
-  --bg-Cdeep-color2: #32143d;
-  --bg-Cdeep-color3: #5E6A75;
+  --card: #9f6a58;
+  --bg-Cdeep-color1: #504538;
+  --bg-Cdeep-color2: #b7a99a;
+  --bg-Cdeep-color3: #3a2808;
   --bg-Cdeep-color4: #5E7571;
-  --primary-color: #f7f6f0;
-  --primary-color-full: #F6B17A;
+  --primary-color: #fdf6ec;
+  --primary-color-full: #ffffff;
   --point-color1: #7ABCF5;
   --point-color2: #7AE3F5;
   --point-color3: #947AF5;
   --point-color4: #7AF57D;
   --main-color: #0ea38a;
   --main-color-deep: #03423d;
-  --sub-color1: #9AC8CD;
-  --sub-color2: #E1F7F5;
+  --sub-color1: #443113;
+  --sub-color2: #504538;
   --color-rgba: rgba(253, 184, 95, 0.47);
   --color-rgbaglass: rgba(253, 184, 95, 0.16);
   --en-lang1: "Roboto", sans-serif;
@@ -43,13 +43,13 @@
 
 
 .title_gra {
-  background-image: linear-gradient(to right, #491f34, #654074);
+  background-image: linear-gradient(to right, #fdf6ec, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .title_gra2 {
-  background-image: linear-gradient(to top, #fff8e0, #f3cab4);
+  background-image: linear-gradient(to top, #ffffff, #fbffeb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -164,7 +164,7 @@ h1.brand_logo img {
 
 .primary_nav a.is_active {
   background: var(--accent);
-  color: #ffffff;
+  color: #7a3920;
   font-weight: 600;
   border-radius: 50px;
   padding-inline: 20px;
@@ -245,14 +245,16 @@ h1.brand_logo img {
   margin: 0 0 12px;
   opacity: 0;
   transform: translateY(20px);
-  letter-spacing: -.02em
+  letter-spacing: -.02em;
+  color: #e9eef5;
 }
 
 .hero_sub {
   margin: 0 0 24px;
   color: var(--muted);
   opacity: 0;
-  transform: translateY(16px)
+  transform: translateY(16px);
+  color: #d1cec8;
 }
 
 .hero_cta {
@@ -292,7 +294,7 @@ h2 {
   /*   background: linear-gradient(to bottom right,
       rgba(52, 218, 190, 0.18),
       rgba(255, 255, 255, 0.05)); */
-  background-image: linear-gradient(to bottom, #d8cdc9, #eeedf0, var(--primary-color));
+  background-image: linear-gradient(to bottom, var(--accent),var(--primary-color));
   flex-direction: column;
   padding-block: 10vh;
 }
@@ -330,7 +332,7 @@ h2 {
 }
 
 .marquee_item {
-  color: #cfe0f5;
+  color: var(--card);
   opacity: .9;
   font-weight: 200;
 }
@@ -348,7 +350,7 @@ h2 {
 }
 
 .feature_card {
-  border-radius: var(--round);
+  border-radius: 210px;
   padding: 24px;
   min-height: 420px;
   transform: translateY(24px);
@@ -361,10 +363,11 @@ h2 {
   justify-content: center;
   cursor: pointer;
   background: var(--card);
-  background-image: linear-gradient(#da8c8c, #654074);
+  background-image: linear-gradient(var(--card), var(--bg-Cdeep-color1));
   /*   background: conic-gradient(from 40deg at 50% 50%, #09114B 0deg, #157654 180deg, #FFBE0B 360deg); */
   overflow: hidden;
   /* 반사광이 밖으로 안 새게 */
+  color: #e9eef5;
 }
 
 .glass_reflect {
@@ -457,30 +460,32 @@ h2 {
 }
 
 .info_section .card {
-  background: var(--bg-Cdeep-color1);
+  background-image: linear-gradient(var(--card), var(--bg-Cdeep-color1));
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  border: 1px solid var(--accent);
+  /* border: 1px solid var(--accent); */
   height: 50vh;
   align-content: center;
   font-size: 2rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  color: #e9eef5;
 }
 
 .info_section .card p {
   margin-top: 20px;
   font-size: 1rem;
-  color: var(--muted);
+  color: var(--bg-Cdeep-color2);
 }
 
 /* ===== Pin + Floating Photos ===== */
+
 .pin_scene {
   padding: 0;
   height: 100vh;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .pin_layer {
@@ -518,6 +523,7 @@ h2 {
   max-width: 900px;
   padding: 0 16px;
   z-index: 3;
+  color: #e9eef5;
 }
 
 .pin_copy h2 {
@@ -527,7 +533,6 @@ h2 {
 
 .pin_copy p {
   margin: 0;
-  color: var(--muted)
 }
 
 /* 중앙에 스택 스테이지 만들기 */
@@ -685,7 +690,11 @@ h2 {
 /* ===== Stats (counters) ===== */
 .stats_section {
   text-align: center;
-  background: var(--bg-Cdeep-color1);
+  background: var(--bg-Cdeep-color3);
+}
+
+.stats_section h2 {
+  color: #e9eef5;
 }
 
 .stats_grid {
@@ -697,10 +706,11 @@ h2 {
 }
 
 .stat_box {
-  background: var(--bg-Cdeep-color2);
+  background: var(--ink);
   border-radius: var(--round);
   padding: 24px;
-  outline: 1px solid rgba(255, 255, 255, .06)
+  /* outline: 1px solid rgba(255, 255, 255, .06); */
+    color: var(--primary-color-full)
 }
 
 .stat_value {
@@ -712,7 +722,7 @@ h2 {
 /* ===== CTA ===== */
 .cta_section {
   text-align: center;
-  background: var(--bg-Cdeep-color1);
+  background: var(--bg-Cdeep-color3);
 }
 
 .cta_section h2 {
@@ -722,7 +732,7 @@ h2 {
 
 .cta_section p {
   margin: 0 0 24px;
-  color: var(--muted)
+  color: var(--bg-Cdeep-color2)
 }
 
 .cta_btn {
@@ -732,7 +742,7 @@ h2 {
   padding: 14px 20px;
   border-radius: 999px;
   background: var(--accent);
-  color: #ffffff;
+  color: #7a3920;
   font-weight: 800;
   transform: translateY(20px);
   opacity: 0
