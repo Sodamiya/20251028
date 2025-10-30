@@ -474,6 +474,52 @@ h2 {
   color: #e9eef5;
 }
 
+.info_section .projects .card .text_g,
+.info_section .projects .card .btn_g {
+    z-index: 1;
+}
+
+.info_section .card::after {
+    content: ''; /* 가상 요소 생성 */
+    
+    /* 위치 설정 */
+    position: absolute; 
+    bottom: 0;          /* 아래쪽 끝에 위치 */
+    right: 0;           /* 오른쪽 끝에 위치 */
+    
+    /* 이미지 영역 크기 설정: 카드 높이(50vh)에 맞춰 적절한 크기로 조정 */
+    /* 예: 카드 높이의 30% 또는 고정 픽셀(px) 값 */
+    width: 50%;         
+    height: 300px;        
+    
+    /* 배경 이미지 설정 */
+    background-image: url('/asset/info1.svg'); /* 👈 여기에 이미지 경로를 넣어주세요! */
+    background-size: contain;   /* 가상 요소 크기에 맞게 이미지를 포함 */
+    background-repeat: no-repeat;
+    background-position: right bottom; /* 가상 요소 영역 내에서 오른쪽 아래에 위치 */
+
+    /* 선택 사항: 모서리에서 살짝 안으로 여백을 주고 싶다면 */
+    /* right: 20px; */
+    /* bottom: 20px; */
+z-index: 0;
+    opacity: 0.3;
+}
+
+.info_section .card:nth-child(2)::after {
+    background-image: url('/asset/info2.svg'); 
+      
+}
+
+.info_section .card:nth-child(3)::after {
+    background-image: url('/asset/info3.svg'); 
+      
+}
+
+.info_section .card:nth-child(4)::after {
+    background-image: url('/asset/info4.svg'); 
+  
+}
+
 .info_section .card p {
   margin-top: 20px;
   font-size: 1rem;
