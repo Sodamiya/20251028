@@ -516,6 +516,10 @@ z-index: 0;
 }
 
 .info_section .card:nth-child(4)::after {
+    background-image: url('/asset/info3.svg'); 
+  
+}
+.info_section .card:nth-child(5)::after {
     background-image: url('/asset/info4.svg'); 
   
 }
